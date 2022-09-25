@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">food</string>
+    <string name="welcome_desc">welcome, please sign in to place an order.</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="dollar_sign">$ %.2f</string>
+    <string name="login">Login</string>
+    <string name="bad_login_msg">Your login credentials don\'t match a registered account</string>
+    <string name="addressBarText">Enter your address</string>
+    <string name="your_favourites">Your Favourites</string>
+    <string name="your_total">Your Total</string>
+    <string name="place_order">Place Order</string>
+    <string name="create_account">Create Account</string>
+    <string name="create_new_account">create your new account</string>
+    <string name="invalidAccountCreate1">Invalid fields, your account was not created</string>
+    <string name="invalidAccountCreate2">Your username or email is already associated with an account</string>
+    <string name="invalidAccountCreate3">Invalid email address!</string>
+    <string name="your_orders">Your Orders</string>
+    <string name="search_restaurants">Search Restaurants</string>
+    <string name="guest">guest</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+
+    /* Nav Bar */
+    <string name="string_nav_home">Home</string>
+    <string name="string_nav_search">Search</string>
+    <string name="string_nav_carts">Carts</string>
+    <string name="string_nav_account">Account</string>
+    <string name="email">Email</string>
+    <string name="hello">hello,</string>
+    <string name="log_out">Log Out</string>
+
+
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/core_colors_fire_orange">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_auth_dismiss"
+        app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="@color/core_colors_fire_orange"
+        app:elevation="0dp">
+
+        <com.food.app.custom_views.CustomSwipeImageView
+            android:id="@+id/button_auth_dismiss"
+            android:layout_width="match_parent"
+            android:paddingTop="50dp"
+
+            android:layout_height="100dp"
+            android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+
+            app:tint="@color/core_colors_platinum_white" />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frag_auth_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/layout_auth_dismiss"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

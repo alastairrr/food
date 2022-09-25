@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/core_colors_platinum_white">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dismissOrderLayout"
+        android:background="@drawable/shadow_gradient"
+        android:backgroundTint="#9959606A"
+        app:layout_constraintTop_toTopOf="parent"
+        app:elevation="0dp">
+
+        <com.food.app.custom_views.CustomSwipeImageView
+
+            android:id="@+id/dismissOrderButton"
+            android:layout_width="match_parent"
+            android:paddingTop="50dp"
+
+            android:layout_height="100dp"
+            android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+
+            app:tint="@color/black" />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/orderDialogRecyclerView"
+        app:layout_constraintTop_toBottomOf="@id/dismissOrderLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:paddingTop="5dp"
+        android:paddingBottom="175dp"
+        android:clipToPadding="false"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:alpha="0.15"
+        android:background="@drawable/shadow_gradient"
+        app:layout_constraintTop_toTopOf="@id/orderDialogRecyclerView" />
+
+
+    <View
+        android:id="@+id/totalView"
+
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:background="@drawable/entry_shape"
+        android:backgroundTint="@color/core_colors_dark_gray"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toTopOf="@id/buttonPlaceOrder"
+        android:orientation="horizontal"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="30dp"
+        android:layout_weight="1"
+        android:elevation="6dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:text="@string/your_total"
+
+        android:textColor="@color/core_colors_fire_orange"
+
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/totalView"
+        app:layout_constraintStart_toStartOf="@id/totalView"
+        app:layout_constraintTop_toTopOf="@id/totalView"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.3" />
+
+    <TextView
+        android:id="@+id/orderDialogTotal"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:maxLines="1"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="40dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical|end"
+        android:textSize="20sp"
+        android:elevation="6dp"
+
+        android:textColor="@color/core_colors_fire_orange"
+
+        android:fontFamily="@font/montserrat"
+        app:layout_constraintEnd_toEndOf="@id/totalView"
+        app:layout_constraintTop_toTopOf="@id/totalView"
+        app:layout_constraintBottom_toBottomOf="@id/totalView"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.3" />
+
+    <TextView
+        android:id="@+id/buttonPlaceOrder"
+
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="40dp"
+        android:maxLines="1"
+        android:elevation="5dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:text="@string/place_order"
+
+        android:textColor="@color/core_colors_platinum_white"
+        android:background="@drawable/entry_shape"
+        android:backgroundTint="@color/core_colors_fire_orange"
+        android:fontFamily="@font/montserrat"
+
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

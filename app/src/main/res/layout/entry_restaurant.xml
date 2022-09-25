@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/entry_shape"
+    android:layout_marginTop="5dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    android:layout_marginBottom="5dp"
+    android:id="@+id/entry_restaurant_Layout"
+    android:elevation="2dp"
+    android:clipToOutline="true">
+
+    <ImageView
+        android:id="@+id/entry_restaurant_banner"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:scaleType="centerCrop"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.60"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_default="percent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/entry_shape_clip" />
+
+    <TextView
+        android:id="@+id/entry_restaurant_title"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="0dp"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+
+        android:fontFamily="@font/montserrat_semi_bold"
+
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/entry_restaurant_subTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entry_restaurant_banner"
+        app:layout_constraintVertical_bias="0.218" />
+
+    <TextView
+        android:id="@+id/entry_restaurant_subTitle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+
+        android:fontFamily="@font/montserrat_semi_bold"
+
+        android:textColor="@color/core_colors_dark_gray"
+        android:textSize="14sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entry_restaurant_title"
+        app:layout_constraintVertical_bias="0.218" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

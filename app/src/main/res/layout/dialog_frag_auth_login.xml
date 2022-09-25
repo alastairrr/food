@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/core_colors_fire_orange"
+    android:id="@+id/frag_login_dialog">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <TextView
+            android:id="@+id/dialog_login_title"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:text="@string/app_name"
+            android:textSize="60sp"
+            android:gravity="center"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:textColor="@color/core_colors_platinum_white"
+            android:layout_marginTop="120dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/dialog_login_welcome_desc"
+
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_desc"
+            android:textSize="22sp"
+            android:layout_gravity="center"
+
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:textColor="@color/core_colors_platinum_white"
+            android:layout_marginTop="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dialog_login_title"
+
+            />
+
+        <EditText
+            android:id="@+id/text_dialog_login_username"
+
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+
+            android:hint="@string/username"
+            android:textColorHint="@color/core_colors_platinum_white"
+            android:maxLines="1"
+
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:textColor="@color/core_colors_platinum_white"
+            android:layout_marginTop="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/welcome_desc"
+            android:backgroundTint="@android:color/transparent"
+            android:autofillHints=""
+            android:inputType="text" />
+
+        <View
+            android:layout_width="340dp"
+            android:layout_height="3dp"
+            android:background="@drawable/line_shape"
+            android:backgroundTint="@color/core_colors_platinum_white"
+            app:layout_constraintTop_toBottomOf="@id/text_dialog_login_username"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_gravity="center"
+            />
+
+        <EditText
+            android:id="@+id/text_dialog_login_password"
+
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:inputType="textPassword"
+
+            android:hint="@string/password"
+            android:textColorHint="@color/core_colors_platinum_white"
+            android:maxLines="1"
+
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:textColor="@color/core_colors_platinum_white"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dialog_auth_username"
+            android:backgroundTint="@android:color/transparent"
+            android:autofillHints=""
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/button_dialog_auth_login"
+
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:maxLines="1"
+            android:gravity="center"
+            android:text="@string/login"
+
+            android:textSize="14sp"
+            android:paddingHorizontal="40dp"
+            android:textColor="@color/core_colors_dark_gray"
+            android:background="@drawable/entry_shape"
+            android:fontFamily="@font/montserrat"
+
+            app:layout_constraintTop_toBottomOf="@+id/dialog_login_password"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/button_dialog_auth_new_user"
+
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:paddingHorizontal="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+
+            android:text="@string/create_new_account"
+            android:maxLines="1"
+
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:textColor="@color/core_colors_platinum_white"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_dialog_auth_login"
+            android:backgroundTint="@android:color/transparent"/>
+
+        <TextView
+            android:id="@+id/dialog_auth_bad_login"
+
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:paddingHorizontal="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:textColor="@color/core_colors_bright_red"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_dialog_auth_new_user"
+            android:backgroundTint="@android:color/transparent"/>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
