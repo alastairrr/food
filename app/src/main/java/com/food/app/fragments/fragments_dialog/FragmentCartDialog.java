@@ -39,12 +39,13 @@ public class FragmentCartDialog extends DialogFragment {
     private static final ArrayList<ItemData> itemDataArrayList = new ArrayList<>();
     private static HashMap<ItemData, Integer> cart;
     private static double totalPriceValue = 0.0;
+    private static OrderData orderData;
 
     public FragmentCartDialog() {}
 
     public static void display(FragmentManager fragmentManager, OrderData orderData, DatabaseManager database) {
         FragmentCartDialog cartDialog = new FragmentCartDialog();
-
+        FragmentCartDialog.orderData = orderData;
         currRestaurant = database.getRestaurantFromItem(database.getItemDataFromID(orderData.getItemID_FK()));
         cart = orderData.getCart();
 
@@ -194,7 +195,7 @@ public class FragmentCartDialog extends DialogFragment {
 
             public void bind() {
                 restaurantName.setText(currRestaurant.getName());
-                restaurantDesc.setText(currRestaurant.getDescription());
+                restaurantDesc.setText(FragmentCartDialog.orderData.getOrderDate());
 
                 try {
                     Field field = R.drawable.class.getField(currRestaurant.getImageRef());
