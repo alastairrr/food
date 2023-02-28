@@ -4,6 +4,7 @@
 
 ## Requirements
 Min SDK: API 31 (Android 12.0 S) 
+Recommended API: API 33
 
 ## Demo
 A functional demo with Android Studio is available.
