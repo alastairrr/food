@@ -8,7 +8,7 @@ Recommended API: API 33
 
 ## Demo
 A functional demo with Android Studio is available.
-Git clone on Android Studio and run with the emulator or plug in with your Android Device!
+Git clone on Android Studio and run with the emulator or plug in with your Android Device.
 ```
 git clone https://github.com/alastairrr/food.git
 ```
@@ -40,7 +40,4 @@ A user must be logged in for their respective order history to show; otherwise, 
 ![ss](doc/img/ss.png)
 
 The overall source structure is split into different sub packages. Custom views consist of a custom ImageView that allows a swiping gesture to be registered (used for dialog fragment dismissing button). “data_class” package consists the data object classes used in the application. The “db_package” consists of core database management source code, including setters and getters to interact with the database. The “fragments” package consists of all of the relevant fragments inflated in their corresponding views. The “ContentPreload” java file consists of arrays of items and restaurants that loads data (occurring once at the first launch of app) into the database, and finally the “Main Activity” manages the core navigation view.
-
-## Git Logs Prior to GitHub Push
-![gl](doc/img/gl.PNG)
 
